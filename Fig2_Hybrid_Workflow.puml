@@ -1,0 +1,14 @@
+@startuml Fig2_Hybrid_Workflow
+title FIG. 2: Hybrid Execution Workflow
+
+rectangle "Classical Preprocessing (201)" as PRE
+rectangle "Quantum Execution (202)" as QEX
+rectangle "Classical Postprocessing (203)" as POST
+rectangle "AI Feedback Loop (204)" as FB
+
+PRE --> QEX
+QEX --> POST
+POST --> FB
+FB --> PRE
+
+@enduml

@@ -1,0 +1,19 @@
+@startuml Fig1_System_Architecture
+title FIG. 1: System Architecture
+
+rectangle "User (101)" as U
+rectangle "SDK Layer (102)" as SDK
+rectangle "QIR++ Compiler (103)" as QIR
+rectangle "AI Optimization Engine (104)" as AI
+rectangle "Scheduler (105)" as SCH
+rectangle "Execution Engine (106)" as EXE
+rectangle "Quantum Hardware / Simulator (107)" as HW
+
+U --> SDK
+SDK --> QIR
+QIR --> AI
+AI --> SCH
+SCH --> EXE
+EXE --> HW
+
+@enduml

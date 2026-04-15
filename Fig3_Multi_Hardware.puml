@@ -1,0 +1,17 @@
+@startuml Fig3_Multi_Hardware
+title FIG. 3: Multi-Hardware Abstraction
+
+rectangle "Cloud Provider A (301)" as AWS
+rectangle "Cloud Provider B (302)" as AZ
+rectangle "Cloud Provider C (303)" as GCP
+
+rectangle "QuantumOS Core (304)" as CORE
+rectangle "Quantum Hardware Backends (305)" as HW
+
+AWS --> CORE
+AZ --> CORE
+GCP --> CORE
+
+CORE --> HW
+
+@enduml

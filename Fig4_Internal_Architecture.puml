@@ -1,0 +1,19 @@
+@startuml Fig4_Internal_Architecture
+title FIG. 4: Internal Architecture of QuantumOS
+
+rectangle "Multi-language SDK (401)" as SDK
+rectangle "Parser (402)" as PARSER
+rectangle "QIR++ Generator (403)" as QIR
+rectangle "AI Optimizer (404)" as AI
+rectangle "Scheduler (405)" as SCH
+rectangle "Execution Manager (406)" as EXE
+rectangle "Hardware Abstraction Layer (407)" as HAL
+
+SDK --> PARSER
+PARSER --> QIR
+QIR --> AI
+AI --> SCH
+SCH --> EXE
+EXE --> HAL
+
+@enduml
