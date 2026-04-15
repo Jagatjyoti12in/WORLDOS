@@ -1,0 +1,11 @@
+// FIG 2: Hybrid Workflow
+digraph {
+	201 [label="Classical Preprocessing"]
+	202 [label="Quantum Execution"]
+	203 [label="Classical Postprocessing"]
+	204 [label="AI Feedback Loop"]
+	201 -> 202
+	202 -> 203
+	203 -> 204
+	204 -> 201
+}

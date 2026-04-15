@@ -1,0 +1,11 @@
+// FIG 5: AI Optimization Loop
+digraph {
+	501 [label="Execution Data"]
+	502 [label="AI Model Training"]
+	503 [label="Optimization Model"]
+	504 [label="Quantum Execution"]
+	501 -> 502
+	502 -> 503
+	503 -> 504
+	504 -> 501
+}

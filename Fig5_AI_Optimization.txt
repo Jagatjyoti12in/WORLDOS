@@ -1,0 +1,14 @@
+@startuml Fig5_AI_Optimization
+title FIG. 5: AI-Based Optimization Loop
+
+rectangle "Execution Data (501)" as DATA
+rectangle "AI Model Training (502)" as TRAIN
+rectangle "Optimization Model (503)" as MODEL
+rectangle "Quantum Execution (504)" as EXEC
+
+DATA --> TRAIN
+TRAIN --> MODEL
+MODEL --> EXEC
+EXEC --> DATA
+
+@enduml

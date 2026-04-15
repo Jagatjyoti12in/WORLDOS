@@ -1,0 +1,12 @@
+// FIG 3: Multi-Hardware
+digraph {
+	301 [label="Cloud A"]
+	302 [label="Cloud B"]
+	303 [label="Cloud C"]
+	304 [label="QuantumOS Core"]
+	305 [label="Quantum Hardware Backends"]
+	301 -> 304
+	302 -> 304
+	303 -> 304
+	304 -> 305
+}

@@ -1,0 +1,16 @@
+// FIG 1: System Architecture
+digraph {
+	101 [label=User]
+	102 [label="SDK Layer"]
+	103 [label="QIR++ Compiler"]
+	104 [label="AI Optimization Engine"]
+	105 [label=Scheduler]
+	106 [label="Execution Engine"]
+	107 [label="Quantum Hardware / Simulator"]
+	101 -> 102
+	102 -> 103
+	103 -> 104
+	104 -> 105
+	105 -> 106
+	106 -> 107
+}

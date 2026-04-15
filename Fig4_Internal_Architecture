@@ -1,0 +1,16 @@
+// FIG 4: Internal Architecture
+digraph {
+	401 [label="Multi-language SDK"]
+	402 [label=Parser]
+	403 [label="QIR++ Generator"]
+	404 [label="AI Optimizer"]
+	405 [label=Scheduler]
+	406 [label="Execution Manager"]
+	407 [label="Hardware Abstraction Layer"]
+	401 -> 402
+	402 -> 403
+	403 -> 404
+	404 -> 405
+	405 -> 406
+	406 -> 407
+}
